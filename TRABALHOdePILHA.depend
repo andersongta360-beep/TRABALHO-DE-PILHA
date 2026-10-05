@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1791194908 source:c:\users\user\desktop\projetos\c\trabalhodepilha\pilha_dinamica.c
+	"PILHA_DINAMICA.h"
+	<stdio.h>
+	<stdlib.h>
+
+1791195932 source:c:\users\user\desktop\projetos\c\trabalhodepilha\main.c
+	"PILHA_DINAMICA.h"
+
+1791195319 c:\users\user\desktop\projetos\c\trabalhodepilha\pilha_dinamica.h
+	"TELA.h"
+
+1790632768 c:\users\user\desktop\projetos\c\trabalhodepilha\pilha_dinamica.c
+	"PILHA_DINAMICA.h"
+	<stdio.h>
+	<stdlib.h>
+
+1791195888 c:\users\user\desktop\projetos\c\trabalhodepilha\tela.h
+	<stdio.h>
+	<stdlib.h>
+
+1791195888 source:c:\users\user\desktop\projetos\c\trabalhodepilha\tela.c
+	<stdio.h>
+	<stdlib.h>
+
