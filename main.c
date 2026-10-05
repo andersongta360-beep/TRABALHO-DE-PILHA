@@ -10,7 +10,8 @@ printf("[pergunta]:DIGITE UM VALOR INTEIRO: "); mensagensErespostas(1);
 valorDECIMAL = lerInteiro();
 
 
-//teste de mudan�a
+//teste de mudança
+           //teste de edição
 
 
 return 0;}
