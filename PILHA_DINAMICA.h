@@ -9,17 +9,19 @@ typedef struct {
   int capacidade;
 }PilhaDinamica;
 
-PilhaDinamica* criar_pilha(int capacidade_inicial);
+PilhaDinamica* criar_pilha(int TAMVETDN);
 
-void destruir_pilha(PilhaDinamica *PILHA);
+void destruir_pilha(PilhaDinamica *pilha);
 
-void push(PilhaDinamica **PILHA, int *capacidade_total, int valor);
+void TRASFORMAemBINARIO(PilhaDinamica *pilha,int valorDECIMAL);
 
-int pop(PilhaDinamica *PILHA);
+void push(PilhaDinamica *pilha, int valor);
 
-int peek(PilhaDinamica *PILHA);
+int pop(PilhaDinamica *pilha);
 
-int esta_vazia_cheia(PilhaDinamica *PILHA,int *capacidade_total);
+int peek(PilhaDinamica *pilha);
+
+int esta_cheia(PilhaDinamica *pilha);
 
 
 

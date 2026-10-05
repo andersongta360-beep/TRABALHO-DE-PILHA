@@ -23,3 +23,22 @@
 	<stdio.h>
 	<stdlib.h>
 
+1791233257 source:c:\users\user\desktop\trabalhodepilha\pilha_dinamica.c
+	"PILHA_DINAMICA.h"
+	<stdio.h>
+	<stdlib.h>
+
+1791233248 c:\users\user\desktop\trabalhodepilha\pilha_dinamica.h
+	"TELA.h"
+
+1791195888 c:\users\user\desktop\trabalhodepilha\tela.h
+	<stdio.h>
+	<stdlib.h>
+
+1791196011 source:c:\users\user\desktop\trabalhodepilha\tela.c
+	<stdio.h>
+	<stdlib.h>
+
+1791233568 source:c:\users\user\desktop\trabalhodepilha\main.c
+	"PILHA_DINAMICA.h"
+
