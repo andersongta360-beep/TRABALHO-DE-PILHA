@@ -3,6 +3,9 @@
 
 #include "TELA.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct {
   int *itens;
   int topo;
