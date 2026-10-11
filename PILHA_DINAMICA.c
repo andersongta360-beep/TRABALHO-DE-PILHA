@@ -1,8 +1,5 @@
 #include "PILHA_DINAMICA.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-
 PilhaDinamica* criar_pilha(int TAMVETDN){
 
   PilhaDinamica* pilha = malloc(sizeof(PilhaDinamica));
@@ -68,8 +65,6 @@ valorBINARIO = pilha->itens[pilha->topo];
 return valorBINARIO;
 }
 
-int peek(PilhaDinamica *pilha){}
-
 int esta_cheia(PilhaDinamica *pilha){
 return pilha->topo == pilha->capacidade;
 }
@@ -77,14 +72,15 @@ return pilha->topo == pilha->capacidade;
 
 int lerInteiro(void) {
     int valor;
-    printf("digite um numero inteiro: ");
-    printf("\n");
+    printf("DIGITE UM NÚMERO INTEÍRO: ");
     while(scanf("%d", &valor) != 1) {
         while(getchar() != '\n');
-        printf("\ndigite um numero inteiro!!! ");
+        printf("\033[91m");
+        printf("\nDIGITE UM NÚMERO INTEÍRO !!! ");
     }
 
     while(getchar() != '\n');
+    printf("\n");
     return valor;
 }
 

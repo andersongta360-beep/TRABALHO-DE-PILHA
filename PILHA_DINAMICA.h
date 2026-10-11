@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 typedef struct {
   int *itens;
@@ -19,8 +20,6 @@ void TRASFORMAemBINARIO(PilhaDinamica *pilha,int valorDECIMAL);
 void push(PilhaDinamica *pilha, int valor);
 
 int pop(PilhaDinamica *pilha);
-
-int peek(PilhaDinamica *pilha);
 
 int esta_cheia(PilhaDinamica *pilha);
 
