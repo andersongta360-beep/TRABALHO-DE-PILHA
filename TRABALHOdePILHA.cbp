@@ -35,10 +35,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="PILHA_DINAMICA.h" />
-		<Unit filename="TELA.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="TELA.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

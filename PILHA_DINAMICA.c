@@ -73,3 +73,27 @@ int peek(PilhaDinamica *pilha){}
 int esta_cheia(PilhaDinamica *pilha){
 return pilha->topo == pilha->capacidade;
 }
+
+
+int lerInteiro(void) {
+    int valor;
+    printf("digite um numero inteiro: ");
+    printf("\n");
+    while(scanf("%d", &valor) != 1) {
+        while(getchar() != '\n');
+        printf("\ndigite um numero inteiro!!! ");
+    }
+
+    while(getchar() != '\n');
+    return valor;
+}
+
+void limparTela(void) {
+    #if defined(_WIN32) || defined(_WIN64)
+        system("cls"); // Comando para limpar o terminal no Windows
+    #elif defined(__linux__) || defined(__unix__)
+        system("clear"); // Comando para limpar o terminal no Linux ou Unix
+    #else
+        printf("\nErro: Sistema operacional não suportado.\n");
+    #endif
+}

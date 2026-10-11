@@ -5,31 +5,22 @@
 
 int main(){
 limparTela();
-DESENHATERMINAL();
+printf("\033[32m");
 int valorDECIMAL=0, TAMVETDN=128;
 PilhaDinamica *pilha = criar_pilha(TAMVETDN);
 
 int INTENCAO=0;
 
 do{
-
-printf("\033[97m");
-mensagensErespostas(2);
 valorDECIMAL = lerInteiro();
-
 TRASFORMAemBINARIO(pilha,valorDECIMAL);
 
-LIMPARERRO();
-LIMPARRESULTADO();
 
-int indice=19;
-
+printf("\n");
 while(pilha->topo > 0){
-  POSICIONARCURSOR(10,indice);printf("\033[92m%d", pop(pilha));
-  indice++;
+  printf("%d", pop(pilha));
 }
-
-printf("\033[0m");
+printf("\n");
 
 }while(INTENCAO !=5);
 

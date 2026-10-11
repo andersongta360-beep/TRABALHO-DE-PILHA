@@ -23,13 +23,12 @@
 	<stdio.h>
 	<stdlib.h>
 
-1791233257 source:c:\users\user\desktop\trabalhodepilha\pilha_dinamica.c
+1791760459 source:c:\users\user\desktop\trabalhodepilha\pilha_dinamica.c
 	"PILHA_DINAMICA.h"
 	<stdio.h>
 	<stdlib.h>
 
-1791239490 c:\users\user\desktop\trabalhodepilha\pilha_dinamica.h
-	"TELA.h"
+1791760694 c:\users\user\desktop\trabalhodepilha\pilha_dinamica.h
 	<stdio.h>
 	<stdlib.h>
 
@@ -40,7 +39,7 @@
 	<stdlib.h>
 	"TELA.h"
 
-1791240229 source:c:\users\user\desktop\trabalhodepilha\main.c
+1791760694 source:c:\users\user\desktop\trabalhodepilha\main.c
 	"PILHA_DINAMICA.h"
 	<stdio.h>
 	<stdlib.h>

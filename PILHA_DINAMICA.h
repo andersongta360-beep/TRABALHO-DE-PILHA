@@ -1,8 +1,6 @@
 #ifndef PILHA_DINAMICA_H_INCLUDED
 #define PILHA_DINAMICA_H_INCLUDED
 
-#include "TELA.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -26,11 +24,9 @@ int peek(PilhaDinamica *pilha);
 
 int esta_cheia(PilhaDinamica *pilha);
 
+int lerInteiro(void);
 
-
-
-
-
+void limparTela(void);
 
 
 
