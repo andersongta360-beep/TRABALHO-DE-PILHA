@@ -23,6 +23,8 @@ int pop(PilhaDinamica *pilha);
 
 int esta_cheia(PilhaDinamica *pilha);
 
+int pilha_vazia(PilhaDinamica *pilha);
+
 int lerInteiro(void);
 
 void limparTela(void);

@@ -1,17 +1,17 @@
 #include "PILHA_DINAMICA.h"
 
-PilhaDinamica* criar_pilha(int TAMVETDN){
+PilhaDinamica* criar_pilha(int tamanho_pilha){
 
   PilhaDinamica* pilha = malloc(sizeof(PilhaDinamica));
   if (pilha == NULL) {
         return NULL;
     }
-  pilha->itens = malloc(TAMVETDN * sizeof(int));
+  pilha->itens = malloc(tamanho_pilha * sizeof(int));
   if (pilha->itens == NULL) {
         free(pilha);
         return NULL;
   }
-  pilha->capacidade = TAMVETDN;
+  pilha->capacidade = tamanho_pilha;
   pilha->topo = 0;
 
   return pilha;
@@ -21,6 +21,10 @@ void destruir_pilha(PilhaDinamica *pilha){
     free(pilha->itens);
     free(pilha);
 
+}
+
+int pilha_vazia(PilhaDinamica *pilha) {
+    return pilha->topo == 0;
 }
 
 void transformar_binario(PilhaDinamica *pilha,int valor_decimal){
@@ -57,23 +61,20 @@ void push(PilhaDinamica *pilha, int valor){
 }
 
 int pop(PilhaDinamica *pilha){
-int valorBINARIO=0;
 
-pilha->topo--;
-valorBINARIO = pilha->itens[pilha->topo];
+    pilha->topo--;
+    return pilha->itens[pilha->topo];
 
-
-return valorBINARIO;
 }
 
 int esta_cheia(PilhaDinamica *pilha){
-return pilha->topo == pilha->capacidade;
+    return pilha->topo == pilha->capacidade;
 }
 
 
 int lerInteiro(void) {
     int valor;
-    printf("DIGITE UM NÚMERO INTEÍRO: ");
+    printf("DIGITE UM NÚMERO INTEIRO: ");
     while(scanf("%d", &valor) != 1) {
         while(getchar() != '\n');
         printf("\033[91m");
