@@ -15,7 +15,7 @@ PilhaDinamica* criar_pilha(int TAMVETDN);
 
 void destruir_pilha(PilhaDinamica *pilha);
 
-void TRASFORMAemBINARIO(PilhaDinamica *pilha,int valorDECIMAL);
+void transformar_binario(PilhaDinamica *pilha,int valor_decimal);
 
 void push(PilhaDinamica *pilha, int valor);
 

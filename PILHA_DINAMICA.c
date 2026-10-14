@@ -23,32 +23,33 @@ void destruir_pilha(PilhaDinamica *pilha){
 
 }
 
-void TRASFORMAemBINARIO(PilhaDinamica *pilha,int valorDECIMAL){
-int COSCIENTE=0;
+void transformar_binario(PilhaDinamica *pilha,int valor_decimal){
+int resto=0;
 
-if(valorDECIMAL == 0) {
+if(valor_decimal == 0) {
   printf("0");
   return;
 }
 
-while(valorDECIMAL > 0){
-  COSCIENTE = valorDECIMAL % 2;
-  valorDECIMAL = valorDECIMAL / 2;
+while(valor_decimal > 0){
+  resto = valor_decimal % 2;
+  valor_decimal = valor_decimal / 2;
 
-  push(pilha,COSCIENTE);
+  push(pilha,resto);
 }
 }
 
 void push(PilhaDinamica *pilha, int valor){
-if(esta_cheia(pilha)){
-int auxTAMVETDN = pilha->capacidade * 2;
-int *aux = realloc(pilha->itens,auxTAMVETDN * sizeof(int));
+    if(esta_cheia(pilha)){
+    int novo_tamanho = pilha->capacidade * 2;
+    int *aux = realloc(pilha->itens,novo_tamanho * sizeof(int));
 
- if(aux == NULL){return;}
-  else{
+ if(aux == NULL){
+        return;
+ } else{
 
- pilha->capacidade = auxTAMVETDN;
- pilha->itens = aux;
+     pilha->capacidade = novo_tamanho;
+     pilha->itens = aux;
   }
  }
  pilha->itens[pilha->topo] = valor;
