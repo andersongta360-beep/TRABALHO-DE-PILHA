@@ -9,10 +9,15 @@
 	<stdio.h>
 	<stdlib.h>
 
-1792381034 c:\users\user\desktop\projetos\repogit\trabalhodepilha\tela.h
+1792426817 c:\users\user\desktop\projetos\repogit\trabalhodepilha\tela.h
 
 1792381034 source:c:\users\user\desktop\projetos\repogit\trabalhodepilha\tela.c
 	<stdio.h>
 	<stdlib.h>
 	"TELA.h"
+
+1792427074 source:c:\users\user\desktop\projetos\repogit\trabalhodepilha\pilha_dinamica.c
+	"PILHA_DINAMICA.h"
+	<stdio.h>
+	<stdlib.h>
 

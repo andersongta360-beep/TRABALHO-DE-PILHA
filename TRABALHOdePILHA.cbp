@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="PILHA_DINAMICA.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="PILHA_DINAMICA.h" />
 		<Unit filename="TELA.c">
 			<Option compilerVar="CC" />

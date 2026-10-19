@@ -6,6 +6,7 @@ int lerInteiro(void);
 
 void limparTela();
 
+
 void DESENHATERMINAL(void);
 
 void POSICIONARCURSOR(int linha,int coluna);
